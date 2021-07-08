@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, Hexo">
+    <meta name="keywords" content="Hexo">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | Hexo</title>
+    <title>Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -311,12 +311,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title"></h1>
                 </div>
             </div>
         </div>
@@ -444,7 +444,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-12-20
+                    2021-07-08
                 </div>
                 
 
@@ -465,16 +465,20 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+                <h1 id="贪心算法JAVA-二-："><a href="#贪心算法JAVA-二-：" class="headerlink" title="贪心算法JAVA(二)："></a>贪心算法JAVA(二)：</h1><h2 id="easy-："><a href="#easy-：" class="headerlink" title="(easy)："></a>(easy)：</h2><h3 id="605-种花问题："><a href="#605-种花问题：" class="headerlink" title="605 种花问题："></a>605 种花问题：</h3><p>​        一个整数数组  flowerbed 表示花坛，由若干 0 和 1 组成，其中 0 表示没种植花，1 表示种植了花。另有一个数 n ，能否在不打破种植规则的情况下种入 n 朵花？能则返回 true ，不能则返回 false。</p>
+<p><strong>示例：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：flowerbed &#x3D; [1,0,0,0,1], n &#x3D; 1</span><br><span class="line">输出：true</span><br></pre></td></tr></table></figure>
+<p><strong>解题思路：</strong>对于中间空位来说，最少需要三个空位才能种一颗花(n-1)/2，对于两端来说，则最少只需要两个空位可满足n/2。</p>
+<p><strong>代码：</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">canPlaceFlowers</span><span class="params">(<span class="keyword">int</span>[] flowerbed, <span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">      <span class="keyword">int</span> length=flowerbed.length;</span><br><span class="line">         <span class="keyword">int</span> count=<span class="number">0</span>;</span><br><span class="line">         <span class="keyword">int</span> countzero=<span class="number">1</span>;</span><br><span class="line">         <span class="keyword">for</span> (<span class="keyword">int</span> i : flowerbed) &#123;</span><br><span class="line">            <span class="keyword">if</span>(i==<span class="number">0</span>)&#123;</span><br><span class="line">                countzero++;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                count+=(countzero-<span class="number">1</span>)/<span class="number">2</span>;</span><br><span class="line">                countzero=<span class="number">0</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">         countzero++;</span><br><span class="line">         count+=(countzero-<span class="number">1</span>)/<span class="number">2</span>;  </span><br><span class="line">        <span class="keyword">return</span> count&gt;=n;  </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="122-买卖股票的最佳时机-II"><a href="#122-买卖股票的最佳时机-II" class="headerlink" title="122 买卖股票的最佳时机 II:"></a>122 买卖股票的最佳时机 II:</h3><p>给定一个数组 prices ，其中 prices[i] 是一支给定股票第 i 天的价格。设计一个算法来计算你所能获取的最大利润。你可以尽可能地完成更多的交易（多次买卖一支股票）。注意：你不能同时参与多笔交易（你必须在再次购买前出售掉之前的股票）。</p>
+<p><strong>示例:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">输入: prices &#x3D; [7,1,5,3,6,4]</span><br><span class="line">输出: 7</span><br><span class="line">解释: 在第 2 天（股票价格 &#x3D; 1）时买入，在第 3 天（股票价格 &#x3D; 5）时卖出, 这笔交易所能获得利润4。</span><br><span class="line">     随后，在第 4 天（股票价格 &#x3D; 3）时买入，在第 5 天（股票价格 &#x3D; 6）时卖出, 这笔交易所能获得利润3。</span><br></pre></td></tr></table></figure>
+<p><strong>解题思路:</strong></p>
+<p>判断第二天的价格是否比前一天的价格高，如果是则继续保留股票，直到股票价格变低则卖出股票。手中无股票时则判断第二天的股票是否比前一天低，低则买入股票。</p>
+<p><strong>代码：</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">maxProfit</span><span class="params">(<span class="keyword">int</span>[] prices)</span> </span>&#123;</span><br><span class="line"> 		<span class="keyword">int</span> length = prices.length;</span><br><span class="line">        <span class="keyword">if</span> (length &lt; <span class="number">1</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> keep = prices[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">int</span> profit = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> pre = prices[<span class="number">0</span>];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (prices[i] &lt;= pre) &#123;</span><br><span class="line">                profit += pre - keep;</span><br><span class="line">                keep = prices[i];</span><br><span class="line">            &#125;</span><br><span class="line">            pre = prices[i];</span><br><span class="line">        &#125;</span><br><span class="line">        profit+=pre-keep;</span><br><span class="line">        <span class="keyword">return</span> profit;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="未完"><a href="#未完" class="headerlink" title="未完"></a>未完</h3>
                 
             </div>
             <hr/>
@@ -500,7 +504,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2020/12/20/hello-world/">http://example.com/2020/12/20/hello-world/</a>
+                    <a href="http://example.com/2021/07/08/leencode/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95JAVA(%E4%BA%8C)%EF%BC%9A/">http://example.com/2021/07/08/leencode/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95JAVA(%E4%BA%8C)%EF%BC%9A/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -705,11 +709,12 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2021/07/08/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95JAVA(%E4%B8%80)%EF%BC%9A/">
+                <a href="/2021/07/08/leencode/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95JAVA(%E4%BA%8C)%EF%BC%9A/">
                     <div class="card-image">
                         
                         
@@ -725,45 +730,8 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-07-08
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            John Doe
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Current&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/12/20/hello-world/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-20
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-08
                             </span>
                         <span class="publish-author">
                             
@@ -774,6 +742,43 @@
                     </div>
                 </div>
 
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/07/08/leencode/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95JAVA(%E4%B8%80)%EF%BC%9A/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-08
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            John Doe
+                            
+                        </span>
+                    </div>
+                </div>
                 
             </div>
         </div>
